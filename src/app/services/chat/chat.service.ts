@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ChatService {
   private apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
-  private apiKey = 'key open ai'; // Substitua pelo seu API key
+  private apiKey = 'sk-'; // Substitua pelo seu API key
 
   constructor(private http: HttpClient) {}
 
@@ -25,3 +25,4 @@ export class ChatService {
   }
 }
 
+ // private apiKey = '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';
