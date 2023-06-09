@@ -25,4 +25,3 @@ export class ChatService {
   }
 }
 
- // private apiKey = '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';
