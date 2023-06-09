@@ -1,0 +1,113 @@
+.container {
+  background-color: #1c83b3;
+  width: 320px;
+  height: 500px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: auto;
+  background-color: #696a6b;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.message-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.message {
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.user-message {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  max-width: 250px;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background-color: #1f80ad;
+  color: white;
+  border-radius: 10px;
+  max-width: 250px;
+  word-wrap: break-word;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-message {
+  padding: 8px;
+  width: 200px;
+  border-radius: 4px;
+  background-color: #282829;
+  color: white;
+  border: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #282829;
+  cursor: pointer;
+}
+
+button svg {
+  width: 16px;
+  height: 16px;
+  color: white;
+  transform: rotate(90deg);
+}
+
+.chat-balloon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #444654;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chat-balloon svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+  transform: rotate(90deg);
+}
