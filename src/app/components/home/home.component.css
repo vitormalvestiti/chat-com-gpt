@@ -1,5 +1,5 @@
 .container {
-  background-color: #1c83b3;
+  background-color: #5a9cf1;
   width: 320px;
   height: 500px;
   position: fixed;
@@ -15,7 +15,7 @@
   flex-direction: column;
   height: 400px;
   overflow-y: auto;
-  background-color: #696a6b;
+  background-color: #a8a8a8;
   align-items: flex-start;
   padding: 10px;
 }
@@ -31,16 +31,16 @@
 }
 
 .user-message {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #5a9cf1;
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   max-width: 250px;
   word-wrap: break-word;
 }
 
 .bot-message {
-  background-color: #1f80ad;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   border-radius: 10px;
   max-width: 250px;
   word-wrap: break-word;
@@ -56,58 +56,42 @@
   position: relative;
   display: flex;
   align-items: center;
+  flex-grow: 1; /* Adicionado */
 }
 
 .input-message {
   padding: 8px;
-  width: 200px;
-  border-radius: 4px;
-  background-color: #282829;
-  color: white;
+  width: 100%; 
+  background-color: #ffffff;
+  border-radius:  4px 0px 0px 4px ;
+  color: rgb(0, 0, 0);
   border: none;
 }
 
 input::placeholder {
-  color: white;
+  color: rgb(0, 0, 0);
+}
+.input-message:focus {
+  outline: none;
 }
 
 button {
-  position: absolute;
-  right: 4px;
-  top: 50%;
-  transform: translateY(-50%);
   padding: 5px;
   border: none;
-  border-radius: 4px;
-  background-color: #282829;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
 button svg {
   width: 16px;
   height: 16px;
-  color: white;
+  color: rgb(0, 0, 0);
   transform: rotate(90deg);
 }
 
-.chat-balloon {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  background-color: #444654;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.chat-balloon svg {
-  width: 24px;
-  height: 24px;
-  color: white;
-  transform: rotate(90deg);
+.button-container {
+  display: flex; /* Adicionado */
+  align-items: center; /* Adicionado */
+  margin-left: 8px; /* Adicionado */
 }
